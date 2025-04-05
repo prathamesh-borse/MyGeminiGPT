@@ -9,7 +9,7 @@ export default function App() {
     const [loading, setLoading] = useState<boolean>(false);
     const chatContainerRef = useRef<HTMLDivElement>(null);
 
-    const ai = new GoogleGenAI({ apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY });
+    const ai = new GoogleGenAI({ apiKey: process.env.NEXT_PUBLIC_GEMINI_API });
 
     useEffect(() => {
         // Auto-scroll to the latest message
