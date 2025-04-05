@@ -71,7 +71,7 @@ export default function App() {
             <p className="text-lg text-gray-600">Your own GPT for all of your questions</p>
 
             {/* Chat Container */}
-            <div className="mt-3 w-full h-[530px] bg-[#191919] rounded-lg p-4 overflow-y-auto shadow-md" ref={chatContainerRef}>
+            <div className="mt-3 w-full h-[560px] bg-[#191919] rounded-lg p-4 overflow-y-auto shadow-md" ref={chatContainerRef}>
                 {messages.length === 0 ? (
                     <p className="text-gray-400">Start a conversation...</p>
                 ) : (
