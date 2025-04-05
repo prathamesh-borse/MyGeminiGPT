@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #4F959D;
     --foreground: #ededed;
   }
 }
@@ -23,4 +23,20 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom Scrollbar */
+#response::-webkit-scrollbar {
+  width: 8px;
+}
+
+#response::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.5);
+  /* Red scrollbar */
+  border-radius: 10px;
+}
+
+#response::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  /* Dark gray track */
 }
