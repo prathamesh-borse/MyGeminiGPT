@@ -1,6 +1,8 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { GoogleGenAI } from "@google/genai";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function App() {
     type Message = { sender: string; text: string; loading?: boolean };
@@ -104,7 +106,8 @@ export default function App() {
                     Send
                 </button>
             </div>
-
+            <Analytics />
+            <SpeedInsights />
         </div>
     );
 }
